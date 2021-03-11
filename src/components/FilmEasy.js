@@ -31,9 +31,9 @@ const FilmEasy = ({ question, correct_answer, incorrect_answers }) => {
       <h2>Question: {question}</h2>
 
       <button value={correct_answer} onClick={handleClick} className={userAnswer ? 'correct' : ''}> { correct_answer }</button>
-      <button value={incorrect_answers[0]} onClick={handleClick} > { incorrect_answers[0] }</button>
-      <button value={incorrect_answers[1]} onClick={handleClick} > { incorrect_answers[1] }</button>
-      <button value={incorrect_answers[2]} onClick={handleClick} > { incorrect_answers[2] }</button>
+      <button value={incorrect_answers[0]} onClick={handleClick} className={userAnswer === incorrect_answers[0] ? 'incorrect' : ''}> { incorrect_answers[0] }</button>
+      <button value={incorrect_answers[1]} onClick={handleClick} className={userAnswer === incorrect_answers[1] ? 'incorrect' : ''}> { incorrect_answers[1] }</button>
+      <button value={incorrect_answers[2]} onClick={handleClick} className={userAnswer === incorrect_answers[2] ? 'incorrect' : ''}> { incorrect_answers[2] }</button>
     </>
   )
 }

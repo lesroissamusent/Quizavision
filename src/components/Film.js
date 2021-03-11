@@ -17,14 +17,17 @@ const Film = () => {
   return (
     <>
       <h1>FILM</h1>
-      <button>Easy</button>
-      { filmData && 
-      <div>
-        {filmData.results.map(film => (
-          <FilmEasy key={film} {...film} />
-        ))}
+      <div className="section">
+        <div className="container is-flex-wrap-wrap">
+          { filmData && 
+            <div className="columns is-multiline">
+              {filmData.results.map(film => (
+                <FilmEasy key={film} {...film} />
+              ))}
+            </div>
+          }
+        </div>
       </div>
-      }
     </>
   )
 }

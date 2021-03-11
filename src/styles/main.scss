@@ -1,9 +1,12 @@
+@import '~bulma/bulma.sass';
+
+
 h1 {
   text-align: center;
 }
 
 
-.container {
+.our-container {
   display: flex;
   flex-wrap: wrap;
   // margin: 80px;
@@ -12,14 +15,12 @@ h1 {
   margin-top: 90px;
 }
 
-.container div {
+.our-container div {
   border: 2px solid black;
   width: 300px;
   height: 300px;
   margin: 30px;
 }
-
-
 
 button.correct {
   border: solid 5px green;
@@ -27,4 +28,12 @@ button.correct {
 
 button.incorrect {
   border: solid 5px red;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  max-width: 300px;
+  min-width: 300px;
 }

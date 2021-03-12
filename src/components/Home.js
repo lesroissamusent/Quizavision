@@ -9,19 +9,19 @@ const Home = () => {
       <h2 className="title is-3">Pick a category and test your trivia knowledge!</h2>
       <div className="our-container">
         <Link to="/film">
-          <div className="box title is-3">
+          <div className="box title is-3 film">
             <h3>Film</h3>
           </div>
         </Link>
         <Link to="/tv">
-          <div className="box title is-3">
+          <div className="box title is-3 tv">
             <h3>TV</h3>
           </div>
         </Link>
-        <div className="box title is-3">
+        <div className="box title is-3 theatre">
           <h3>Theatre/Muscials</h3>
         </div>
-        <div className="box title is-3">
+        <div className="box title is-3 music">
           <h3>Music</h3>
         </div>
 

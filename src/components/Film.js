@@ -25,9 +25,9 @@ const Film = () => {
   return (
     <>
       <h1>FILM</h1>
-      <div className="counter">
+      {/* <div className="counter">
         <h3>SCORE</h3>
-      </div>
+      </div> */}
       <div className="section">
         <div className="container is-flex-wrap-wrap is-fluid">
           { filmData && 
@@ -38,7 +38,9 @@ const Film = () => {
             </div>
           }
         </div>
-        <button onClick={handleClick} className="next">Next Question</button>
+        <div className="next-div">
+          <button onClick={handleClick} className="next">Next Question</button>
+        </div>
       </div>
     </>
   )

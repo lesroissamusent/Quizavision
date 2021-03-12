@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           {/* <Link to="/">
-            <span role="img" aria-label="logo" className="title">🧀</span>
+            <span role="img" aria-label="logo" className="title" src="../../home-solid.svg"></span>
           </Link> */}
           <Link to="/" className="navbar-item">
             TRIVIA
@@ -19,5 +19,6 @@ const Navbar = () => {
   )
 
 }
+
 
 export default Navbar

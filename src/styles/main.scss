@@ -1,9 +1,21 @@
 @import '~bulma/bulma.sass';
 
+body {
+  height: 100vh;
+}
+
+h1.home {
+  font-size: 70px;
+}
 
 h1, h2 {
   text-align: center;
   padding-top: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+h3 {
+  text-align: center;
+  padding-top: 100px;
 }
 
 .counter {
@@ -22,6 +34,11 @@ h1, h2 {
   // width: 800px;
   justify-content: center;
   margin-top: 90px;
+
+    :hover {
+        animation: pulse;
+        animation-duration: 1s;
+      }
 }
 
 .our-container div {
@@ -29,10 +46,25 @@ h1, h2 {
   width: 300px;
   height: 300px;
   margin: 30px;
+
+    
 }
 
 button {
   margin: 5px;
+  width:300px;
+  height: 200px;
+  font-size: 20px;
+  background-color: 
+}
+
+button.next {
+  margin-left: 700px;
+  margin-top: 100px;
+  padding: 20px;
+  width:250px;
+  height: 100px;
+  font-size: 20px;
 }
 
 button.correct {
@@ -42,21 +74,32 @@ button.correct {
 button.incorrect {
   border: solid 5px red;
 }
-
-.card {
+.card-parent {
   display: flex;
-  flex-direction: column;
-  height:100%;
+  flex-direction: row;
+ 
+// .container {
+//   height: 400px;
+// }
+  
   // max-width: 33%;
   // min-width: 300px;
 }
-.card-header{
 
-}
+.card {
+  height: 400px;
+  // width: 60%;
 
-.card-content {
-  justify-items: center;  
+  // max-width: 33%;
+  // min-width: 300px;
 }
+ .card-header {
+  height: 50%;
+ }
+
+// .card-content {
+//   justify-items: center;  
+// }
 
 section {
   margin: 50px;

@@ -67,7 +67,7 @@ const FilmQs = ({ question, correct_answer, incorrect_answers }) => {
 
   return (
     <>
-      <div className="column">
+      <div className="container is-4by3">
         <div className="card">
           <div className="card-header">
             <div className="card-header-title is-centered" dangerouslySetInnerHTML={{ __html: question }}></div>

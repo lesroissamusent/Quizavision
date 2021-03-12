@@ -38,7 +38,7 @@ const Film = () => {
             </div>
           }
         </div>
-        <button onClick={handleClick}>Next Question</button>
+        <button onClick={handleClick} className="next">Next Question</button>
       </div>
     </>
   )

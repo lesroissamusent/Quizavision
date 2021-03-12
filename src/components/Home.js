@@ -5,24 +5,24 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="title is-1">TRIVIA</h1>
+      <h1 className="home">TRIVIA</h1>
       <h2 className="title is-3">Pick a category and test your trivia knowledge!</h2>
       <div className="our-container">
         <Link to="/film">
-          <div className="box">
-            <h2>Film</h2>
+          <div className="box title is-3">
+            <h3>Film</h3>
           </div>
         </Link>
         <Link to="/tv">
-          <div className="box">
-            <h2>TV</h2>
+          <div className="box title is-3">
+            <h3>TV</h3>
           </div>
         </Link>
-        <div className="box">
-          <h2>Theatre/Muscials</h2>
+        <div className="box title is-3">
+          <h3>Theatre/Muscials</h3>
         </div>
-        <div className="box">
-          <h2>Music</h2>
+        <div className="box title is-3">
+          <h3>Music</h3>
         </div>
 
       </div>

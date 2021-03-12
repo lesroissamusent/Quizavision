@@ -20,14 +20,15 @@ const Tv = () => {
       setTvData(data) 
     }
     getData()
+    
   }
 
   return (
     <>
       <h1>TV</h1>
-      <div className="counter">
+      {/* <div className="counter">
         <h3>SCORE</h3>
-      </div>
+      </div> */}
       <div className="section">
         <div className="container is-flex-wrap-wrap is-fluid">
           { tvData && 
@@ -38,7 +39,9 @@ const Tv = () => {
             </div>
           }
         </div>
-        <button onClick={handleClick}>Next Question</button>
+        <div className="next-div">
+          <button onClick={handleClick} className="next">Next Question</button>
+        </div>
       </div>
     </>
   )

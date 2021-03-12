@@ -36,22 +36,20 @@ const TvQs = ({ question, correct_answer, incorrect_answers }) => {
 
   return (
     <>
-      <div className="column">
+      <div className="container">
         <div className="card">
           <div className="card-header">
             <div className="card-header-title is-centered" dangerouslySetInnerHTML={{ __html: question }}></div>
           </div>
           <div className="card-content">
-            <button value={correct_answer} onClick={handleClick} className="{userAnswer ? 'correct' : ''}" dangerouslySetInnerHTML={{ __html: correct_answer }}></button>
-            <button value={incorrect_answers[0]} onClick={handleClick} className="{userAnswer === incorrect_answers[0] ? 'incorrect' : ''}"> { incorrect_answers[0] }</button>
-            <button value={incorrect_answers[1]} onClick={handleClick} className="{userAnswer === incorrect_answers[1] ? 'incorrect' : ''}"> { incorrect_answers[1] }</button>
-            <button value={incorrect_answers[2]} onClick={handleClick} className="{userAnswer === incorrect_answers[2] ? 'incorrect' : ''}"> { incorrect_answers[2] }</button> 
+            <button value={correct_answer} onClick={handleClick} className={userAnswer === correct_answer ? 'correct' : ''} dangerouslySetInnerHTML={{ __html: correct_answer }}></button>
+            <button value={incorrect_answers[0]} onClick={handleClick} className={userAnswer === incorrect_answers[0] ? 'incorrect' : ''} dangerouslySetInnerHTML={{ __html: incorrect_answers[0] }}></button>
+            <button value={incorrect_answers[1]} onClick={handleClick} className={userAnswer === incorrect_answers[1] ? 'incorrect' : ''} dangerouslySetInnerHTML={{ __html: incorrect_answers[1] }}></button>
+            <button value={incorrect_answers[2]} onClick={handleClick} className={userAnswer === incorrect_answers[2] ? 'incorrect' : ''} dangerouslySetInnerHTML={{ __html: incorrect_answers[2] }}></button> 
           </div>
         </div>
       </div>
-      
 
-      {/* <button onClick={handleNextQuestion}>Next question</button> */}
     </>
   )
 }

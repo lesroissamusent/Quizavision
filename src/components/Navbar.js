@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-item">
         <Link to="/" className="navbar-start">
-          TRIVIA
+          HOME
         </Link>
       </div>
     </nav>

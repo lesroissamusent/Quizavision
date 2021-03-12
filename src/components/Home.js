@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="home">TRIVIA</h1>
+      <h1 className="home">QUIZAVISION</h1>
       <h2 className="title">Pick a category and test your trivia knowledge!</h2>
       <div className="our-container">
         <Link to="/film">

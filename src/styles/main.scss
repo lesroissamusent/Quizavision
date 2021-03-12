@@ -1,10 +1,19 @@
 @import '~bulma/bulma.sass';
 
 
-h1 {
+h1, h2 {
   text-align: center;
+  padding-top: 30px;
 }
 
+.counter {
+  text-align: right;
+  margin-right: 200px;
+}
+
+.navbar-item {
+  margin-left: 50px;
+}
 
 .our-container {
   display: flex;
@@ -22,6 +31,10 @@ h1 {
   margin: 30px;
 }
 
+button {
+  margin: 5px;
+}
+
 button.correct {
   border: solid 5px green;
 }
@@ -34,6 +47,17 @@ button.incorrect {
   display: flex;
   flex-direction: column;
   height:100%;
-  max-width: 300px;
-  min-width: 300px;
+  // max-width: 33%;
+  // min-width: 300px;
+}
+.card-header{
+
+}
+
+.card-content {
+  justify-items: center;  
+}
+
+section {
+  margin: 50px;
 }

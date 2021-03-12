@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import FilmEasy from './FilmEasy'
+import FilmQs from './FilmQs'
 
 const Film = () => {
   const [filmData, setFilmData] = useState(null)
@@ -17,12 +17,15 @@ const Film = () => {
   return (
     <>
       <h1>FILM</h1>
+      <div className="counter">
+        <h3>SCORE</h3>
+      </div>
       <div className="section">
-        <div className="container is-flex-wrap-wrap">
+        <div className="container is-flex-wrap-wrap is-fluid">
           { filmData && 
             <div className="columns is-multiline">
               {filmData.results.map(film => (
-                <FilmEasy key={film} {...film} />
+                <FilmQs key={film} {...film} />
               ))}
             </div>
           }

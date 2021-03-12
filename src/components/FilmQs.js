@@ -47,7 +47,7 @@ const FilmEasy = ({ question, correct_answer, incorrect_answers }) => {
       <div className="column is-one-quarter-desktop is-one-third-tablet">
         <div className="card">
           <div className="card-header">
-            <div className="card-header-title">{question}</div>
+            <div className="card-header-title is-centered">{question}</div>
           </div>
         
           <div className="card-content">

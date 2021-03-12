@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <h1>TRIVIA</h1>
-      <p>INSTRUCTIONS</p>
+      <h2>INSTRUCTIONS</h2>
       <div className="our-container">
         <Link to="/film">
           <div>
@@ -24,6 +24,13 @@ const Home = () => {
         </div>
 
       </div>
+      <footer className="footer">
+        <div className="content has-text-centered">
+          <p>
+            {/* Made with <strong>Bulma</strong>.  */}
+          </p>
+        </div>
+      </footer>
     </>
   )
 }

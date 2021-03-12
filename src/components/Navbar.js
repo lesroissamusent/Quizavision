@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
   return (
-    <nav className="navbar has-background-info">
+    <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
           {/* <Link to="/">

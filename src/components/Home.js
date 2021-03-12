@@ -26,13 +26,13 @@ const Home = () => {
         </div>
 
       </div>
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="content has-text-centered">
           <p>
             Made with <strong>love</strong>. 
           </p>
         </div>
-      </footer>
+      </footer> */}
     </>
   )
 }

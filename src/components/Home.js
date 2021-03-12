@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <h1 className="home">TRIVIA</h1>
-      <h2 className="title is-3">Pick a category and test your trivia knowledge!</h2>
+      <h2 className="title">Pick a category and test your trivia knowledge!</h2>
       <div className="our-container">
         <Link to="/film">
           <div className="box title is-3 film">
@@ -18,13 +18,6 @@ const Home = () => {
             <h3>TV</h3>
           </div>
         </Link>
-        <div className="box title is-3 theatre">
-          <h3>Theatre/Muscials</h3>
-        </div>
-        <div className="box title is-3 music">
-          <h3>Music</h3>
-        </div>
-
       </div>
       {/* <footer className="footer">
         <div className="content has-text-centered">

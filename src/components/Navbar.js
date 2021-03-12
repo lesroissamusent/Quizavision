@@ -5,15 +5,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="container">
-        <div className="navbar-brand">
-          {/* <Link to="/">
-            <span role="img" aria-label="logo" className="title" src="../../home-solid.svg"></span>
-          </Link> */}
-          <Link to="/" className="navbar-item">
-            TRIVIA
-          </Link>
-        </div>
+      <div className="navbar-item">
+        <Link to="/" className="navbar-start">
+          TRIVIA
+        </Link>
       </div>
     </nav>
   )

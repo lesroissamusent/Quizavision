@@ -41,10 +41,10 @@ const FilmQs = ({ question, correct_answer, incorrect_answers }) => {
   useEffect(() => {
     const checkAnswer = () => {
       if (userAnswer === correct_answer) {
-        // console.log('RIGHT')
+        console.log('RIGHT')
         // setCounter()
       } else if ((userAnswer === incorrect_answers[0]) || (userAnswer === incorrect_answers[1]) || (userAnswer === incorrect_answers[2])) {
-        // console.log('WRONG')
+        console.log('WRONG')
       }
     }
     checkAnswer()
@@ -73,13 +73,15 @@ const FilmQs = ({ question, correct_answer, incorrect_answers }) => {
             <div className="card-header-title is-centered" dangerouslySetInnerHTML={{ __html: question }}></div>
           </div>
           <div className="card-content">
-            <button value={correct_answer} onClick={handleClick} className="{userAnswer ? 'correct' : ''}" dangerouslySetInnerHTML={{ __html: correct_answer }}></button>
-            <button value={incorrect_answers[0]} onClick={handleClick} className="{userAnswer === incorrect_answers[0] ? 'incorrect' : ''}"> { incorrect_answers[0] }</button>
-            <button value={incorrect_answers[1]} onClick={handleClick} className="{userAnswer === incorrect_answers[1] ? 'incorrect' : ''}"> { incorrect_answers[1] }</button>
-            <button value={incorrect_answers[2]} onClick={handleClick} className="{userAnswer === incorrect_answers[2] ? 'incorrect' : ''}"> { incorrect_answers[2] }</button> 
+            <button value={correct_answer} onClick={handleClick} className={userAnswer ? 'correct' : ''} dangerouslySetInnerHTML={{ __html: correct_answer }}></button>
+            <button value={incorrect_answers[0]} onClick={handleClick} className={userAnswer === incorrect_answers[0] ? 'incorrect' : ''} dangerouslySetInnerHTML={{ __html: incorrect_answers[0] }}></button>
+            <button value={incorrect_answers[1]} onClick={handleClick} className={userAnswer === incorrect_answers[1] ? 'incorrect' : ''} dangerouslySetInnerHTML={{ __html: incorrect_answers[1] }}></button>
+            <button value={incorrect_answers[2]} onClick={handleClick} className={userAnswer === incorrect_answers[2] ? 'incorrect' : ''} dangerouslySetInnerHTML={{ __html: incorrect_answers[2] }}></button> 
           </div>
         </div>
       </div>
+
+      
       
 
       {/* <button onClick={handleNextQuestion}>Next question</button> */}

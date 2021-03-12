@@ -20,6 +20,7 @@ const Film = () => {
       setFilmData(data) 
     }
     getData()
+    
   }
 
   return (

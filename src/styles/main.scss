@@ -10,22 +10,27 @@ body {
   background-position: center;
 }
 
+h2.title {
+  color: white;
+}
+
 h1.home {
-  font-size: 70px;
-  font: white;
+  font-size: 100px;
+  color: white;
+  
 }
 
 h1, h2 {
   text-align: center;
-  padding-top: 30px;
+  // padding-top: 30px;
   font-family: 'Nunito', sans-serif;
   font-size: 60px;
-  font: white;
+  color: white;
 }
 h3 {
   text-align: center;
   padding-top: 100px;
-  font: white;
+  color: white;
 }
 
 .section {
@@ -39,19 +44,19 @@ h3 {
 
 .navbar {
   background-color: black;
+  color: white;
 }
 
 .navbar-item {
   // margin-left: 50px;
-  font: white;
   text-decoration: none;
 }
 
 .our-container {
   display: flex;
   flex-wrap: wrap;
-  // margin: 80px;
-  width: 80%;
+  margin: 80px;
+  width: 90%;
   justify-content: center;
   margin-top: 90px;
 
@@ -145,17 +150,11 @@ section {
   margin: 50px;
 }
 .film {
-  background-color: #FF6F69;
+  background-color: rgba(177, 59, 59, 0.548);
+  border: solid 1px white;
 }
 
 .tv {
-  background-color: #FFCC5C;
-}
-
-.theatre {
-  background-color: #88D8B0;
-}
-
-.music {
-  background-color: #8B9DC3;
+  background-color: rgba(177, 59, 59, 0.548);
+  border: solid 1px white;
 }

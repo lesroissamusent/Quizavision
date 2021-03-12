@@ -4,6 +4,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Film from './components/Film'
+import Tv from './components/Tv'
+
 
 function App() {
   
@@ -16,6 +18,9 @@ function App() {
         </Route>
         <Route path="/film">
           <Film />
+        </Route>
+        <Route path="/tv">
+          <Tv />
         </Route>
       </Switch>
     </BrowserRouter>

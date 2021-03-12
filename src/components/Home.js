@@ -5,21 +5,23 @@ const Home = () => {
 
   return (
     <>
-      <h1>TRIVIA</h1>
-      <h2>INSTRUCTIONS</h2>
+      <h1 className="title is-1">TRIVIA</h1>
+      <h2 className="title is-3">Pick a category and test your trivia knowledge!</h2>
       <div className="our-container">
         <Link to="/film">
-          <div>
+          <div className="box">
             <h2>Film</h2>
           </div>
         </Link>
-        <div>
-          <h2>TV</h2>
-        </div>
-        <div>
+        <Link to="/tv">
+          <div className="box">
+            <h2>TV</h2>
+          </div>
+        </Link>
+        <div className="box">
           <h2>Theatre/Muscials</h2>
         </div>
-        <div>
+        <div className="box">
           <h2>Music</h2>
         </div>
 
@@ -27,7 +29,7 @@ const Home = () => {
       <footer className="footer">
         <div className="content has-text-centered">
           <p>
-            {/* Made with <strong>Bulma</strong>.  */}
+            Made with <strong>love</strong>. 
           </p>
         </div>
       </footer>

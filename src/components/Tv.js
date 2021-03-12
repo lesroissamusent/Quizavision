@@ -1,39 +1,39 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import FilmQs from './FilmQs'
+import TvQs from './TvQs'
 
-const Film = () => {
-  const [filmData, setFilmData] = useState(null)
+const Tv = () => {
+  const [tvData, setTvData] = useState(null)
   
 
   useEffect(() => {
     const getData = async() => {
-      const { data } = await axios.get('https://opentdb.com/api.php?amount=1&category=11&type=multiple')
-      setFilmData(data) 
+      const { data } = await axios.get('https://opentdb.com/api.php?amount=1&category=14&type=multiple')
+      setTvData(data) 
     }
     getData()
   }, [])
 
   const handleClick = () => {
     const getData = async() => {
-      const { data } = await axios.get('https://opentdb.com/api.php?amount=1&category=11&type=multiple')
-      setFilmData(data) 
+      const { data } = await axios.get('https://opentdb.com/api.php?amount=1&category=14&type=multiple')
+      setTvData(data) 
     }
     getData()
   }
 
   return (
     <>
-      <h1>FILM</h1>
+      <h1>TV</h1>
       <div className="counter">
         <h3>SCORE</h3>
       </div>
       <div className="section">
         <div className="container is-flex-wrap-wrap is-fluid">
-          { filmData && 
+          { tvData && 
             <div className="columns is-multiline">
-              {filmData.results.map(film => (
-                <FilmQs key={film} {...film} />
+              {tvData.results.map(tv => (
+                <TvQs key={tv} {...tv} />
               ))}
             </div>
           }
@@ -44,4 +44,4 @@ const Film = () => {
   )
 }
 
-export default Film
+export default Tv

@@ -26,9 +26,6 @@ const Tv = () => {
   return (
     <>
       <h1>TV</h1>
-      {/* <div className="counter">
-        <h3>SCORE</h3>
-      </div> */}
       <div className="section">
         <div className="container is-flex-wrap-wrap is-fluid">
           { tvData && 

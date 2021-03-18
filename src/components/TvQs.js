@@ -20,7 +20,7 @@ const TvQs = ({ question, correct_answer, incorrect_answers }) => {
         // console.log('RIGHT')
         // setCounter()
       } else if ((userAnswer === incorrect_answers[0]) || (userAnswer === incorrect_answers[1]) || (userAnswer === incorrect_answers[2])) {
-        // console.log('WRONG')
+        // console.log('WRONG'
       }
     }
     checkAnswer()

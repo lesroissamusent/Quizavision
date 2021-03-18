@@ -5,7 +5,6 @@ import FilmQs from './FilmQs'
 const Film = () => {
   const [filmData, setFilmData] = useState(null)
   
-
   useEffect(() => {
     const getData = async() => {
       const { data } = await axios.get('https://opentdb.com/api.php?amount=1&category=11&type=multiple')
@@ -20,15 +19,11 @@ const Film = () => {
       setFilmData(data) 
     }
     getData()
-    
   }
 
   return (
     <>
       <h1>FILM</h1>
-      {/* <div className="counter">
-        <h3>SCORE</h3>
-      </div> */}
       <div className="section">
         <div className="container is-flex-wrap-wrap is-fluid">
           { filmData && 

@@ -1,6 +1,7 @@
 
 # QUIZAVISION
-https://user-images.githubusercontent.com/74684118/117840537-2a444600-b274-11eb-9a6a-bb0a0202a45e.mov
+
+https://user-images.githubusercontent.com/74684118/117840887-72fbff00-b274-11eb-86a5-76a7aaa1d475.mov
 
 [Try the App!](https://quizavision.netlify.app/)
 

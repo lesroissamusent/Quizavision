@@ -1,9 +1,11 @@
 
-# QUIZAVISION
 
-https://user-images.githubusercontent.com/74684118/117840887-72fbff00-b274-11eb-86a5-76a7aaa1d475.mov
 
-[Try the App!](https://quizavision.netlify.app/)
+# QUIZAVISION!
+
+![quizavision](https://user-images.githubusercontent.com/74684118/117842851-39c48e80-b276-11eb-992d-32456eb572f9.gif)
+
+Click [here](https://quizavision.netlify.app/) to try the App!
 
 ## Table of contents: 
 * [Brief](#brief)

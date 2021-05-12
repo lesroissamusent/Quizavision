@@ -1,6 +1,3 @@
-
-
-
 # QUIZAVISION!
 
 ![quizavision](https://user-images.githubusercontent.com/74684118/117842851-39c48e80-b276-11eb-992d-32456eb572f9.gif)
@@ -15,7 +12,7 @@ Click [here](https://quizavision.netlify.app/) to try the App!
 * [API Used](#api-used)
 * [Process](#process)
   * [Planning](#planning)
-  * [Quiz Logic](#quiz-logic)
+  * [App Elements](#app-elements)
   * [Styling](#styling)
   * [Challenges](#challenges)
   * [Wins](#wins)
@@ -66,14 +63,73 @@ Due to the timeframe of the project we were aware that we couldn't plan anything
 Our original plan included having 4 or more categories for the user to choose from, but this changed once we started playing around with the data and realised how detailed each category was. 
 
 **WireFrame and Plan for Sign-off (Including MVP and Bonus Features)**
-
-### Quiz Logic
-
-**Creating a grid**
+<img width="741" alt="Screenshot 2021-05-12 at 18 08 12" src="https://user-images.githubusercontent.com/74684118/118016275-1f111900-b34d-11eb-9a3a-317bdd6966e1.png">
+<img width="1000" alt="Screenshot 2021-05-12 at 18 08 32" src="https://user-images.githubusercontent.com/74684118/118016281-20dadc80-b34d-11eb-8df8-da032591dd95.png">
 
 
-**Moving the frog**
+### App Elements
 
+**Routes**
+
+```js
+function App() {
+  
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/film">
+          <Film />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
+}
+
+export default App
+```
+
+**API request**
+
+```js
+useEffect(() => {
+    const getData = async() => {
+      const { data } = await axios.get('https://opentdb.com/api.php?amount=40&category=11&type=multiple')
+      setFilmData(data) 
+    }
+    getData()
+  }, [])
+```
+
+**Film trivia questions**
+```js
+const FilmEasy = ({ question, correct_answer, incorrect_answers }) => {
+
+  const handleClick = event => {
+    console.log(event.target.value)
+    
+    if (event.target.value === 'correct') {
+      return <button className='correct'></button>
+    }
+  }
+
+  return (
+    <>
+      <h2>Question: {question}</h2>
+
+      <button onClick={handleClick} value="correct"> { correct_answer }</button>
+      <button onClick={handleClick} value="incorrect"> { incorrect_answers[0] }</button>
+      <button onClick={handleClick} value="incorrect"> { incorrect_answers[1] }</button>
+      <button onClick={handleClick} value="incorrect"> { incorrect_answers[2] }</button>
+    </>
+  )
+}
+
+export default FilmEasy
+```
 
 ### Styling
 * For this project we used Bulma (our first experience with CSS a framework) to give us some broad strokes ie: buttons, containers but wanted to add our own touches and not create an overly bulma looking app.

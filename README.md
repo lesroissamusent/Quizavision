@@ -133,7 +133,7 @@ export default FilmEasy
 
 ### Styling
 * For this project we used Bulma (our first experience with CSS a framework) to give us some broad strokes ie: buttons, containers but wanted to add our own touches and not create an overly bulma looking app.
-* We wanted to give the app a pub quiz vibe, to emulate the feel of a Friday night out with friends and drinks, this 
+* We wanted to give the app a pub quiz vibe, and the feel of a Friday night out with friends and drinks. The neon sign and brick background were meant to emulate a New York comedy club. 
 
 ### Challenges
 * Randomised correct/incorrect answers - the difficulty here was that the incorrect answers came bundled together but the correct answer was separate and needed to be drilled into separately. As such, we struggled to put all four answers together and write a randomisation function that did not leave the correct answer always at the beginning or end of the stack. 
